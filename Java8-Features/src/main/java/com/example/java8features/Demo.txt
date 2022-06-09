@@ -1,0 +1,55 @@
+
+** JAVA 8 FEATURES **
+
+1) Lambda Expressions
+    • reduce boilerplate code
+    • (argument list) -> (Body of lambda expression)
+    Example :
+        • () -> System.out.println("Zero parameter lambda");
+        • (p) -> System.out.println("One parameter: " + p);
+        • (p1, p2) -> System.out.println("Multiple parameters: " + p1 + ", " + p2);
+
+2) Method Reference
+    • refer method of functional interface.
+    • compact and easy form of lambda expression
+
+3) ForEach method
+    •  can pass lambda expression as an argument.
+
+4) Default Method
+
+5) Stream API
+    • imperative programming -> declarative programming
+    • stream() - enter declarative approach -> abstraction
+
+6) Optional
+    • help in writing a neat code without using too many null checks
+    • we can specify alternate values to return or alternate code to run
+    • makes the code more readable
+    • to avoid abnormal termination, we use the Optional class
+
+7) Functional Interface
+
+    (i) Consumer
+        • accepts a single input and returns no output.
+        • implementation of this interface consumes the input supplied to it and modifies it
+        • no result
+
+    (ii) Supplier
+        •  simple interface which indicates that this implementation is a supplier of results
+        •  has only one method get() and does not have any other default and static methods.
+        •  no input only output.
+
+    (iii) Predicate
+        • mainly used to filter data from a Java Stream
+        • filter method of a stream accepts a predicate to filter the data and return a new stream satisfying the predicate
+        • boolean result
+
+    (iv) Function
+        • takes an argument and produces a result
+        • Single Abstract Method (SAM) apply which accepts an argument of a type T and produces a result of type R.
+        • Both input and output available
+
+
+
+
